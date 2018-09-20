@@ -1,16 +1,13 @@
 year = input("Enter year: ");
 
-def is_leap_year():
-    if((year%4 == 0) and (year%100 != 0)):
-        is_leap_year == True
-    elif((year%100 == 0) and (year%400 == 0)):
-        is_leap_year == True
-    elif(year%400 == 0):
-        is_leap_year == True
+    if (year % 4) == 0:
+        if (year % 100) == 0:
+            if (year % 400) == 0:
+                print("leap year")
+            else:
+                print("not a leap year")
+        else:
+            print("leap year")
     else:
-        is_leap_year == False
+        print("not a leap year")
 
-if is_leap_year == True:
-    print("leap year!")
-if is_leap_year == False:
-    print("not a leap year!")
